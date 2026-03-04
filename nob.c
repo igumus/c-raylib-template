@@ -17,6 +17,7 @@ int main(int argc, char **argv)
     nob_cc_output(&cmd, BUILD_FOLDER "main");
     nob_cc_inputs(&cmd, SRC_FOLDER "main.c");
     cmd_append(&cmd, "-I./raylib/include");
+    cmd_append(&cmd, "-I./thirdparty");
     cmd_append(&cmd, "-L./raylib/lib/");
     cmd_append(&cmd, "-l:libraylib.a");
     cmd_append(&cmd, "-lm");
